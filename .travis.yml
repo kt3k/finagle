@@ -13,7 +13,7 @@ before_script:
   - unset SBT_OPTS
 
 script:
-  - echo skip ./sbt ++$TRAVIS_SCALA_VERSION finagle-http/test
+  - ./sbt ++$TRAVIS_SCALA_VERSION finagle-http/test
   - echo skip ./sbt ++$TRAVIS_SCALA_VERSION finagle-memcached/test
   - ./sbt ++$TRAVIS_SCALA_VERSION finagle-commons-stats/test
   - ./sbt ++$TRAVIS_SCALA_VERSION finagle-core/test
